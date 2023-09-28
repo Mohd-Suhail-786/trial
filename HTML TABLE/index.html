@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML TABLE</h1>
+    <!-- table is used to displaying 2-D data -->
+    <!-- cellspacing means create space between cell -->
+    <!-- cellpadding means create spce within tne cell  -->
+    <table border="5" cellspacing="5" cellpadding="5">
+        <!-- table head -->
+        <thead>
+            <tr>
+                <th>Days/Periods</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+        </thead>
+        <!-- table body -->
+        <tbody>
+            <tr>
+                <!-- td=table data -->
+                <td>Monday</td>
+                <td>English</td>
+                <td>Science</td>
+                <td>Hindi</td>
+                <td>Maths</td>
+            </tr>
+             <tr>
+                <td>Thursday</td>
+                <td>Games</td>
+                <td>EVS</td>
+                <!-- agar 2 element same hai row mein aur hume usko merge karna hai toh hum colspan=2 karke merge kar denge  -->
+                <td colspan="2">Maths</td>
+              <!-- <td>Maths</td> -->
+            </tr>
+             <tr>
+                <td>Wednesday</td>
+                <td>Hindi</td>
+                <td>English</td>
+                <td>Maths</td>
+                 <!-- agar 2 element same hai col mein aur hume usko merge karna hai toh hum rowspan=2 karke merge kar denge  -->
+                <td 
+                rowspan="2">Games</td>
+             </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>Hindi</td>
+                <td>English</td>
+                <td>Games</td>
+                <!-- <td>Games</td> -->
+            </tr>
+        </tbody>
+        <!-- table foot -->
+        <tfoot>
+            <tr>
+                <!-- colspan=5 karne se poora 5 line absorb karke niche foot par likh jaaata hai. -->
+                <!-- aur isme th likhne se jo likha hota hai wo bold aur center ho jaata hai -->
+               <th colspan="5"> This is class v time table</th> 
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
